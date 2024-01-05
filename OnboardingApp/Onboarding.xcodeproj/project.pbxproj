@@ -7,12 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		196B77C22B46F85000B0B8AD /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196B77C12B46F85000B0B8AD /* CardView.swift */; };
+		196B77C42B47005F00B0B8AD /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196B77C32B47005F00B0B8AD /* OnboardingView.swift */; };
+		196B77C62B47016300B0B8AD /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196B77C52B47016300B0B8AD /* Card.swift */; };
+		196B77C82B4703BF00B0B8AD /* OnboardingVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196B77C72B4703BF00B0B8AD /* OnboardingVM.swift */; };
+		19ECB4DC2B4817D700B3FCCA /* View+SwipeGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ECB4DB2B4817D700B3FCCA /* View+SwipeGesture.swift */; };
+		19ECB4E02B48203200B3FCCA /* String+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ECB4DF2B48203200B3FCCA /* String+Constants.swift */; };
+		19ECB4E42B482FAF00B3FCCA /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ECB4E32B482FAF00B3FCCA /* ButtonStyle.swift */; };
 		19FE266F2B3FD7B0007F0C0F /* OnboardingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE266E2B3FD7B0007F0C0F /* OnboardingApp.swift */; };
 		19FE26732B3FD7B1007F0C0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19FE26722B3FD7B1007F0C0F /* Assets.xcassets */; };
 		19FE26762B3FD7B1007F0C0F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19FE26752B3FD7B1007F0C0F /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		196B77C12B46F85000B0B8AD /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		196B77C32B47005F00B0B8AD /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		196B77C52B47016300B0B8AD /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		196B77C72B4703BF00B0B8AD /* OnboardingVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVM.swift; sourceTree = "<group>"; };
+		19ECB4DB2B4817D700B3FCCA /* View+SwipeGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+SwipeGesture.swift"; sourceTree = "<group>"; };
+		19ECB4DF2B48203200B3FCCA /* String+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Constants.swift"; sourceTree = "<group>"; };
+		19ECB4E32B482FAF00B3FCCA /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
 		19FE266B2B3FD7B0007F0C0F /* Onboarding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Onboarding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19FE266E2B3FD7B0007F0C0F /* OnboardingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingApp.swift; sourceTree = "<group>"; };
 		19FE26722B3FD7B1007F0C0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -30,6 +44,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1981A3C62B47D85000342D14 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				196B77C32B47005F00B0B8AD /* OnboardingView.swift */,
+				196B77C12B46F85000B0B8AD /* CardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1981A3C72B47D86100342D14 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				196B77C72B4703BF00B0B8AD /* OnboardingVM.swift */,
+				196B77C52B47016300B0B8AD /* Card.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		19ECB4DD2B48201000B3FCCA /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				19ECB4DE2B48201B00B3FCCA /* Extension */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		19ECB4DE2B48201B00B3FCCA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				19ECB4DF2B48203200B3FCCA /* String+Constants.swift */,
+				19ECB4DB2B4817D700B3FCCA /* View+SwipeGesture.swift */,
+				19ECB4E32B482FAF00B3FCCA /* ButtonStyle.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		19FE26622B3FD7B0007F0C0F = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +101,9 @@
 			children = (
 				19FE266E2B3FD7B0007F0C0F /* OnboardingApp.swift */,
 				19FE26722B3FD7B1007F0C0F /* Assets.xcassets */,
+				1981A3C62B47D85000342D14 /* View */,
+				1981A3C72B47D86100342D14 /* ViewModel */,
+				19ECB4DD2B48201000B3FCCA /* Helper */,
 				19FE26742B3FD7B1007F0C0F /* Preview Content */,
 			);
 			path = Onboarding;
@@ -157,7 +210,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				196B77C42B47005F00B0B8AD /* OnboardingView.swift in Sources */,
+				19ECB4DC2B4817D700B3FCCA /* View+SwipeGesture.swift in Sources */,
+				196B77C82B4703BF00B0B8AD /* OnboardingVM.swift in Sources */,
+				196B77C22B46F85000B0B8AD /* CardView.swift in Sources */,
+				19ECB4E02B48203200B3FCCA /* String+Constants.swift in Sources */,
+				19ECB4E42B482FAF00B3FCCA /* ButtonStyle.swift in Sources */,
 				19FE266F2B3FD7B0007F0C0F /* OnboardingApp.swift in Sources */,
+				196B77C62B47016300B0B8AD /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
