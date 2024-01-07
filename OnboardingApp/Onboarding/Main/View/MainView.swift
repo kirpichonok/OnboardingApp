@@ -1,10 +1,13 @@
 import SwiftUI
 
 struct MainView: View {
+    @EnvironmentObject var coordinator: Coordinator
     var body: some View {
         VStack {
             Spacer()
-            Button {}
+            Button {
+                coordinator.push(page: .onboarding)
+            }
                 label: {
                     Label(
                         title: {

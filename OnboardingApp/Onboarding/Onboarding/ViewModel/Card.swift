@@ -1,7 +1,6 @@
 import Foundation
 
-struct Card: Identifiable, Hashable {
+struct Card {
     let imageName: String
     let description: String
-    let id = UUID()
 }

@@ -1,6 +1,6 @@
 import SwiftUI
 
-class Coordinator: ObservableObject {
+final class Coordinator: ObservableObject {
     @Published var path = NavigationPath()
 
     func push(page: Page) {

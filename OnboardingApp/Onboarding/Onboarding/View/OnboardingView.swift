@@ -3,7 +3,7 @@ import SwiftUI
 struct OnboardingView: View {
     @ObservedObject var viewModel: OnboardingVM
     @State var visibleCardsIndices = [Int]()
-    @Environment(\.dismiss) var dismiss
+    @EnvironmentObject var coordinator: Coordinator
 
     var body: some View {
         VStack {
@@ -33,7 +33,7 @@ struct OnboardingView: View {
 
             Button {
                 if visibleCardsIndices.count <= 1 {
-                    dismiss()
+                    coordinator.pop()
                 }
                 _ = visibleCardsIndices.popLast()
             }
@@ -49,6 +49,7 @@ struct OnboardingView: View {
         .onAppear(perform: {
             visibleCardsIndices = Array(viewModel.cards.indices)
         })
+        .navigationBarBackButtonHidden()
     }
 
     private subscript(index: Int) -> CGFloat {

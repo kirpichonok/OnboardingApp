@@ -117,7 +117,7 @@
 		19ECB4E82B483A6700B3FCCA /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				19ECB4E92B483A6700B3FCCA /* MainView.swift */,
+				1951161F2B4A8CC400C9742F /* View */,
 			);
 			path = Main;
 			sourceTree = "<group>";

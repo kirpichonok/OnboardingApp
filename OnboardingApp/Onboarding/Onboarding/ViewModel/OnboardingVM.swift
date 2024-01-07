@@ -1,6 +1,6 @@
 import Foundation
 
-public final class OnboardingVM: ObservableObject {
+final class OnboardingVM: ObservableObject {
     @Published var cards: [Card]
     init() {
         cards = OnboardingVM.staticCardsData
