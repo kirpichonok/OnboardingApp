@@ -1,8 +1,5 @@
-enum Page: String, Identifiable {
+enum Page {
     case main
-    case onboarding
-
-    var id: String {
-        rawValue
-    }
+    case onboardingRoot
+    case onboardingChild(ScreenOrder)
 }

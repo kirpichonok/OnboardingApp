@@ -10,8 +10,11 @@
 		195116192B4A898C00C9742F /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195116172B4A898C00C9742F /* Page.swift */; };
 		1951161A2B4A898C00C9742F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195116182B4A898C00C9742F /* Coordinator.swift */; };
 		1951161E2B4A8C4100C9742F /* CoordinatorRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1951161D2B4A8C4100C9742F /* CoordinatorRootView.swift */; };
+		195116242B4AB5EF00C9742F /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195116232B4AB5EF00C9742F /* OnboardingView.swift */; };
+		195116262B4ABB8600C9742F /* ScreenOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195116252B4ABB8600C9742F /* ScreenOrder.swift */; };
+		195116282B4ABFB600C9742F /* OnboardingChildView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195116272B4ABFB600C9742F /* OnboardingChildView.swift */; };
 		196B77C22B46F85000B0B8AD /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196B77C12B46F85000B0B8AD /* CardView.swift */; };
-		196B77C42B47005F00B0B8AD /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196B77C32B47005F00B0B8AD /* OnboardingView.swift */; };
+		196B77C42B47005F00B0B8AD /* OnboardingRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196B77C32B47005F00B0B8AD /* OnboardingRootView.swift */; };
 		196B77C62B47016300B0B8AD /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196B77C52B47016300B0B8AD /* Card.swift */; };
 		196B77C82B4703BF00B0B8AD /* OnboardingVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196B77C72B4703BF00B0B8AD /* OnboardingVM.swift */; };
 		19ECB4DC2B4817D700B3FCCA /* View+SwipeGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ECB4DB2B4817D700B3FCCA /* View+SwipeGesture.swift */; };
@@ -27,8 +30,11 @@
 		195116172B4A898C00C9742F /* Page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		195116182B4A898C00C9742F /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		1951161D2B4A8C4100C9742F /* CoordinatorRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorRootView.swift; sourceTree = "<group>"; };
+		195116232B4AB5EF00C9742F /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		195116252B4ABB8600C9742F /* ScreenOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenOrder.swift; sourceTree = "<group>"; };
+		195116272B4ABFB600C9742F /* OnboardingChildView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingChildView.swift; sourceTree = "<group>"; };
 		196B77C12B46F85000B0B8AD /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
-		196B77C32B47005F00B0B8AD /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		196B77C32B47005F00B0B8AD /* OnboardingRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingRootView.swift; sourceTree = "<group>"; };
 		196B77C52B47016300B0B8AD /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		196B77C72B4703BF00B0B8AD /* OnboardingVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVM.swift; sourceTree = "<group>"; };
 		19ECB4DB2B4817D700B3FCCA /* View+SwipeGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+SwipeGesture.swift"; sourceTree = "<group>"; };
@@ -81,7 +87,9 @@
 		1981A3C62B47D85000342D14 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				196B77C32B47005F00B0B8AD /* OnboardingView.swift */,
+				196B77C32B47005F00B0B8AD /* OnboardingRootView.swift */,
+				195116272B4ABFB600C9742F /* OnboardingChildView.swift */,
+				195116232B4AB5EF00C9742F /* OnboardingView.swift */,
 				196B77C12B46F85000B0B8AD /* CardView.swift */,
 			);
 			path = View;
@@ -91,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				196B77C72B4703BF00B0B8AD /* OnboardingVM.swift */,
+				195116252B4ABB8600C9742F /* ScreenOrder.swift */,
 				196B77C52B47016300B0B8AD /* Card.swift */,
 			);
 			path = ViewModel;
@@ -262,7 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				196B77C42B47005F00B0B8AD /* OnboardingView.swift in Sources */,
+				196B77C42B47005F00B0B8AD /* OnboardingRootView.swift in Sources */,
 				19ECB4DC2B4817D700B3FCCA /* View+SwipeGesture.swift in Sources */,
 				195116192B4A898C00C9742F /* Page.swift in Sources */,
 				19ECB4EA2B483A6700B3FCCA /* MainView.swift in Sources */,
@@ -270,10 +279,13 @@
 				196B77C22B46F85000B0B8AD /* CardView.swift in Sources */,
 				1951161A2B4A898C00C9742F /* Coordinator.swift in Sources */,
 				19ECB4E02B48203200B3FCCA /* String+Constants.swift in Sources */,
+				195116282B4ABFB600C9742F /* OnboardingChildView.swift in Sources */,
 				19ECB4E42B482FAF00B3FCCA /* ButtonStyle.swift in Sources */,
 				19FE266F2B3FD7B0007F0C0F /* OnboardingApp.swift in Sources */,
 				196B77C62B47016300B0B8AD /* Card.swift in Sources */,
 				1951161E2B4A8C4100C9742F /* CoordinatorRootView.swift in Sources */,
+				195116262B4ABB8600C9742F /* ScreenOrder.swift in Sources */,
+				195116242B4AB5EF00C9742F /* OnboardingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

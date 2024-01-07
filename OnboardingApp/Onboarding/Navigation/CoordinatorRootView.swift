@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct CoordinatorRootView: View {
-    @StateObject private var coordinator = Coordinator()
+    @EnvironmentObject private var coordinator: Coordinator
 
     var body: some View {
         NavigationStack(path: $coordinator.path) {
@@ -16,5 +16,5 @@ struct CoordinatorRootView: View {
 }
 
 #Preview {
-    CoordinatorRootView()
+    CoordinatorRootView().environmentObject(Coordinator())
 }

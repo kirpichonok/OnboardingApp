@@ -1,9 +1,20 @@
-import Foundation
+import SwiftUI
 
 final class OnboardingVM: ObservableObject {
+    @EnvironmentObject var coordinator: Coordinator
     @Published var cards: [Card]
+
     init() {
         cards = OnboardingVM.staticCardsData
+    }
+
+    func showScreen(after screenNumber: ScreenOrder) {
+        let nextIndex = screenNumber.rawValue + 1
+        if let order = ScreenOrder(rawValue: nextIndex) {
+            coordinator.push(page: .onboardingChild(order))
+        } else {
+            coordinator.popToRoot()
+        }
     }
 }
 

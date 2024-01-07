@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct CardView: View {
-    @State var card: Card
+    @Binding var card: Card
 
     var body: some View {
         ZStack {
@@ -32,5 +32,5 @@ extension CardView {
 }
 
 #Preview {
-    CardView(card: OnboardingVM.staticCardsData.first!)
+    CardView(card: .constant(OnboardingVM.staticCardsData.first!))
 }
