@@ -67,6 +67,7 @@
 		19ECB4DD2B48201000B3FCCA /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				19ECB4E32B482FAF00B3FCCA /* ButtonStyle.swift */,
 				19ECB4DE2B48201B00B3FCCA /* Extension */,
 			);
 			path = Helper;
@@ -77,7 +78,6 @@
 			children = (
 				19ECB4DF2B48203200B3FCCA /* String+Constants.swift */,
 				19ECB4DB2B4817D700B3FCCA /* View+SwipeGesture.swift */,
-				19ECB4E32B482FAF00B3FCCA /* ButtonStyle.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
