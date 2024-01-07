@@ -1,5 +1,6 @@
 enum Page {
     case main
-    case onboardingRoot
-    case onboardingChild(ScreenOrder)
+    case onboardingFirst
+    case onboardingSecond
+    case onboardingThird
 }

@@ -2,8 +2,8 @@ import SwiftUI
 
 struct OnboardingView: View {
     @Binding var card: Card
-    @State var buttonTitle: String
     var buttonAction: (() -> Void)?
+    let buttonTitle: String
 
     var body: some View {
         VStack {
@@ -32,5 +32,5 @@ struct OnboardingView: View {
 }
 
 #Preview {
-    OnboardingView(card: .constant(OnboardingVM().cards.first!), buttonTitle: "Next")
+    OnboardingView(card: .constant( Card.staticCardsData.first!), buttonTitle: "Next")
 }

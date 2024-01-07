@@ -32,5 +32,5 @@ extension CardView {
 }
 
 #Preview {
-    CardView(card: .constant(OnboardingVM.staticCardsData.first!))
+    CardView(card: .constant(Card.staticCardsData.first!))
 }

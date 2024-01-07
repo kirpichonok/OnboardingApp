@@ -19,10 +19,12 @@ final class Coordinator: ObservableObject {
         switch page {
         case .main:
             MainView()
-        case .onboardingRoot:
-            OnboardingRootView(viewModel: OnboardingVM())
-        case let .onboardingChild(order):
-            OnboardingChildView(screenOrder: order)
+        case .onboardingFirst:
+            OnboardingFirstView()
+        case .onboardingSecond:
+            OnboardingSecondView()
+        case .onboardingThird:
+            OnboardingThirdView()
         }
     }
 }

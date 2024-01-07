@@ -6,7 +6,7 @@ struct MainView: View {
         VStack {
             Spacer()
             Button {
-                coordinator.push(page: .onboardingRoot)
+                coordinator.push(page: .onboardingFirst)
             }
                 label: {
                     Label(
