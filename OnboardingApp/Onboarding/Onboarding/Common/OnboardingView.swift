@@ -17,12 +17,12 @@ struct OnboardingView: View {
             Button {
                 buttonAction?()
             }
-                label: {
-                    Text(buttonTitle)
-                }
-                .font(Font.title2.weight(.semibold))
-                .buttonStyle(AppButtonStyle())
-                .padding(EdgeInsets(top: 20, leading: 80, bottom: 40, trailing: 80))
+            label: {
+                Text(buttonTitle)
+            }
+            .font(Font.title2.weight(.semibold))
+            .buttonStyle(AppButtonStyle())
+            .padding(EdgeInsets(top: 20, leading: 80, bottom: 40, trailing: 80))
         }
     }
 
@@ -32,5 +32,5 @@ struct OnboardingView: View {
 }
 
 #Preview {
-    OnboardingView(card: .constant( Card.staticCardsData.first!), buttonTitle: "Next")
+    OnboardingView(card: .constant(Card.staticCardsData.first!), buttonTitle: "Next")
 }

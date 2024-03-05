@@ -106,13 +106,13 @@
 			path = First;
 			sourceTree = "<group>";
 		};
-		1981A3C62B47D85000342D14 /* View */ = {
+		1981A3C62B47D85000342D14 /* Common */ = {
 			isa = PBXGroup;
 			children = (
 				195116272B4ABFB600C9742F /* OnboardingView.swift */,
 				196B77C12B46F85000B0B8AD /* CardView.swift */,
 			);
-			path = View;
+			path = Common;
 			sourceTree = "<group>";
 		};
 		1981A3C72B47D86100342D14 /* ViewModel */ = {
@@ -153,7 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				19EED8742B4AEE6D00198CD3 /* Screen */,
-				1981A3C62B47D85000342D14 /* View */,
+				1981A3C62B47D85000342D14 /* Common */,
 				1981A3C72B47D86100342D14 /* ViewModel */,
 			);
 			path = Onboarding;
